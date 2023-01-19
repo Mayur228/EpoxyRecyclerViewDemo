@@ -9,12 +9,12 @@ kapt {
 }
 
 android {
-    compileSdk 32
+    compileSdk 33
 
     defaultConfig {
         applicationId "com.example.epoxyrecyclerviewdemo"
         minSdk 21
-        targetSdk 32
+        targetSdk 33
         versionCode 1
         versionName "1.0"
 
@@ -47,8 +47,14 @@ dependencies {
     implementation 'androidx.appcompat:appcompat:1.5.1'
     implementation 'com.google.android.material:material:1.7.0'
     implementation 'androidx.constraintlayout:constraintlayout:2.1.4'
+
+    //epoxy
     implementation "com.airbnb.android:epoxy:5.1.1"
     kapt "com.airbnb.android:epoxy-processor:5.1.1"
+
+    //glide
+    implementation 'com.github.bumptech.glide:glide:4.14.2'
+    kapt 'com.github.bumptech.glide:compiler:4.14.2'
 
 
     testImplementation 'junit:junit:4.13.2'
